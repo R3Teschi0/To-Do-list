@@ -8,7 +8,24 @@
 }
 
 #myHeader {
-    background-color: transparent;
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 18px;
+    border-radius: 999px;
+
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+    z-index: 10;
 }
 
 .container {
@@ -22,7 +39,7 @@
     width: 100%;
     max-width: 540px;
     background: #fff;
-    margin: 100px auto 20px;
+    margin: 120px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
