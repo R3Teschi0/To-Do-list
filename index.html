@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 id="myHeader">Made by R3Teschio</h2>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="images/icon.png" alt="icon.png"></h2>
+
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+
+            <div class="filter-container">
+                <button class="selected" onclick="filterTasks('all', this)">
+                    All
+                </button>
+
+                <button onclick="filterTasks('checked', this)">
+                    Checked
+                </button>
+
+                <button onclick="filterTasks('unchecked', this)">
+                    Unchecked
+                </button>
+            </div>
+
+            <div class="counter-cointainer">
+                <h2 id="total-h2">Total: 0</h2>
+                <h2 id="compleated-h2">Compleated: 0</h2>
+                <h2 id="to-do-h2">To-do: 0</h2>
+            </div>
+
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
